@@ -4,6 +4,14 @@ function Name(props){
 	)
 }
 
+// var Bill = React.createClass({
+
+// });
+
+// var Credit = React.createClass({
+	
+// })
+
 var MyForm = React.createClass({
 
 	getInitialState: function() {

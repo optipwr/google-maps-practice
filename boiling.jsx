@@ -45,9 +45,11 @@ function BoilingVerdict(props){
 }
 
 var TemperatureInput = React.createClass({
-
+	
 	handleChange: function(event){
 		this.props.onChange(event.target.value)
+		{/*'this' is pointing to TemperatureInput and .props is pointing to its props below tUnits, or value, or onChange. In this example it poitns to onChange*/}
+
 	},
 
 	render: function(){
@@ -62,6 +64,12 @@ var TemperatureInput = React.createClass({
 	}
 })
 
+// class Calculator(){
+// 	constructor(props) {
+// 		super(props);
+// 		this.state = {}
+// 	}
+// }
 
 
 var Calculator = React.createClass({
